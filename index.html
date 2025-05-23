@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>에나타 AI 사면</title>
+  <title>에나타 AI 샘</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -144,8 +144,8 @@
       const cards = document.querySelectorAll('.card');
       cards.forEach((card, i) => {
         if (i === index) {
-          // 앞면 이미지 파일명 설정
-          const cardName = cardNames[index].replaceAll(" ", "_") + ".png";
+          // 앞면 이미지 파일명 설정 (.jpg 확장자)
+          const cardName = cardNames[index].replaceAll(" ", "_") + ".jpg";
           const frontImg = card.querySelector(".card-front img");
           frontImg.src = cardName;
 
